@@ -1,6 +1,5 @@
 from omegaconf import OmegaConf
 from pathlib import Path
-import hydra
 import sys
 
 OmegaConf.register_new_resolver("path", Path)

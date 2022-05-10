@@ -16,5 +16,11 @@ dude_descr: |
     
 dude: ${cli:hello,bye,${dude_descr}}
 
+unity:
+  username: unity
+  password: test_password
+  domain: WORKGROUP
+
+
 
 123: 456
