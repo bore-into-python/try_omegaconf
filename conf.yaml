@@ -17,9 +17,9 @@ dude_descr: |
 dude: ${cli:hello,bye,${dude_descr}}
 
 unity:
-  username: unity
-  password: test_password
-  domain: WORKGROUP
+  username: ${oc.env:UNITY_USERNAME,unity}
+  password: ${oc.env:UNITY_PASSWORD,test_password}
+  domain: ${oc.env:UNITY_DOMAIN,WORKGROUP}
 
 
 

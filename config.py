@@ -22,16 +22,17 @@ cli_conf = OmegaConf.from_cli()
 
 conf = OmegaConf.load("conf.yaml")
 conf2 = OmegaConf.create({})
-from contextlib import suppress
-with suppress(FileNotFoundError):
-    conf2 = OmegaConf.load("conf_prod.yaml")
+#from contextlib import suppress
+#with suppress(FileNotFoundError):
+#    conf2 = OmegaConf.load("conf_prod.yaml")
 
 
 
     
 #print(OmegaConf.to_yaml(conf))
 
-config = OmegaConf.merge(conf, conf2, cli_conf)
+config = OmegaConf.merge(conf, cli_conf)
+#config = OmegaConf.merge(conf, conf2, cli_conf)
 
 #print(conf.list)
 #print(conf.the_host)

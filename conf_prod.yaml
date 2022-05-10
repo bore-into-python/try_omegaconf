@@ -1,6 +1,0 @@
-unity:
-   username: ${oc.env:UNITY_USERNAME}
-   password: ${oc.env:UNITY_PASSWORD}
-   domain: ${oc.env:UNITY_DOMAIN}
-
-the_host: prod-host.prod
