@@ -1,0 +1,20 @@
+server: 
+  host: localhost
+  port: 80
+b: ${oc.deprecated:c}
+c: The new value
+d: ${oc.select:${oc.env:DVAL}}
+list:
+- item1
+- ${server.host}
+the_host: ${oc.env:HOST,localhost}
+docs: ${path:/Users/dtv/Documents}
+
+dude_descr: |
+    This is some description for the `dude` parameter, and we will even
+    split it into severa lines just for the heck of it
+    
+dude: ${cli:hello,bye,${dude_descr}}
+
+
+123: 456
